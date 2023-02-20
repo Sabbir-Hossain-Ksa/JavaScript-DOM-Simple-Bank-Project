@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farasan Bank</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1 class="text-5xl text-center mt-6 mb-4">Welcome to <span class="text-violet-600 ">Farasan Bank</span></h1>
+  </header>
+  <main>
+    <section class="container mx-auto bg-blue-200 p-5 py-14 w-3/4">
+        <h3 class="text-3xl font-medium mb-3">Please Login</h3>
+        <form>
+            <input type="email" value=""  placeholder="Enter Email Address" id="user-email"  class="mt-1 block w-3/4 px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+      focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+      disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+      invalid:border-pink-500 invalid:text-pink-600
+      focus:invalid:border-pink-500 focus:invalid:ring-pink-500 
+    "/>
+            <input type="password" value="" placeholder="Enter password"  id="user-password" class="mt-1 mb-2 block w-3/4 px-3 my-4 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400
+      focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+      disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
+      invalid:border-pink-500 invalid:text-pink-600
+      focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+    "/>
+            <button id="btn-submit" class="bg-red-500 text-white py-2 px-7 font-medium rounded-md hover:bg-sky-700" type="submit">Submit</button>
+        </form>
+    </section>
+  </main>
+<script src="js/main.js"></script>
+</body>
+</html>
